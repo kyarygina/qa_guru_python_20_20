@@ -22,6 +22,6 @@ def test_skip_pages():
             have.text('Reading lists with sync'))
     with step('Кликнуть "Continue"'):
         browser.element((AppiumBy.ID, 'org.wikipedia.alpha:id/fragment_onboarding_forward_button')).click()
-    with step('Проверить текст на четверой странице'):
+    with step('Проверить текст на четвертой странице'):
         browser.element((AppiumBy.ID, 'org.wikipedia.alpha:id/primaryTextView')).should(
             have.text('Data & Privacy'))
